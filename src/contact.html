@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  include "partials/_head.html"
+<body>
+  include "partials/_header.html"   
+  <div class="web__container">
+    <p class="contact_title">CONTACT US</p>   
+    <div class="contact__element contact__element--border">
+      <i class="fa fa-map-marker" aria-hidden="true"></i> 
+      <p class="contact_subtitle">OUR STORE</p>
+      <p class="contact_info">500 Terry Francois Street</p>
+      <p class="contact_info">San Francisco, CA 94158</p>
+      <p class="contact_info">info@mysite.com I Tel. 123-456-7890</p>
+      <a class="map_link" href="#map">View map ></a>
+    </div> 
+    <div class="contact__element">
+      <i class="fa fa-clock-o" aria-hidden="true"></i>
+      <p class="contact_subtitle">OPENING HOURS</p>   
+      <p class="contact_info">Monday - Friday: 11.00 - 18.30</p>
+      <p class="contact_info">Saturday: 11.00 - 17.00</p>
+      <p class="contact_info">Sunday: 12.30 - 16.30</p>
+    </div>   
+  </div>
+  <div class="form__container">
+    <form class="container">
+      <p class="form_title">You can also email us at: info@mysite.com or fill in our contact form:</p> 
+      <div class="form__area">
+        <input class="form_item" name="name" value="" placeholder="Name">
+        <input class="form_item" name="email" value="" placeholder="Email">
+        <input class="form_item" name="subject" value="" placeholder="Subject">
+      </div>
+      <div class="form__area form__area--message">  
+        <textarea class="form_item form_item--message" rows="1" cols="30" name="message" placeholder="Message">
+        </textarea>
+      </div>
+      <div class="form-button">
+        <a href="#" class="form-send">Send</a>
+      </div>
+    </div>
+  </div>
+  <div class="map__container" id="map">
+  </div>
+  include "partials/_media.html"
+  include "partials/_footer.html"
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHH9lgsDKus4jM7dAlp_mCkp_NA2gXbfo&callback=initMap">
+  </script>
+</body>
+</html>
